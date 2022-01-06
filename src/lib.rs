@@ -1,3 +1,5 @@
+#![doc = include_str!("../README.md")]
+
 const N_SAMPLES: usize = 471;
 const CIE_LAMBDA: [f32; N_SAMPLES] = [
     360.0, 361.0, 362.0, 363.0, 364.0, 365.0, 366.0, 367.0, 368.0, 369.0, 370.0, 371.0, 372.0,
@@ -1495,6 +1497,7 @@ fn black_body_normalized(lambda: &[f32], t: f32) -> Vec<f32> {
     le
 }
 
+/// Convert temperatue (Kelvin) into XYZ color whose components are [0.0, 1.0].
 pub fn temperature_to_xyz(t: f32) -> [f32; 3] {
     let values = black_body_normalized(CIE_LAMBDA.as_slice(), t);
     let mut xyz = [0.0f32; 3];
@@ -1514,6 +1517,7 @@ pub fn temperature_to_xyz(t: f32) -> [f32; 3] {
     xyz
 }
 
+/// Convert temperatue (Kelvin) into RGB color whose components are [0.0, 1.0].
 pub fn temperature_to_rgb(t: f32) -> [f32; 3] {
     let xyz = temperature_to_xyz(t);
 

@@ -14,7 +14,7 @@ fn main() {
 }
 ```
 
-```
+```text
 [examples\example.rs:4] temperature_to_rgb(3000.0) = [
     0.73506474,
     0.3504873,
