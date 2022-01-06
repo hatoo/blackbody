@@ -1,5 +1,7 @@
 # blackbody
 
+[![Crates.io](https://img.shields.io/crates/v/blackbody.svg)](https://crates.io/crates/blackbody)
+
 Blackbody simply provides functions that convert temperature into color.
 Codes are ported from [pbrt-v3](https://github.com/mmp/pbrt-v3).
 
