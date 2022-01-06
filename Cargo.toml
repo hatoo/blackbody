@@ -2,6 +2,12 @@
 name = "blackbody"
 version = "0.0.0"
 edition = "2021"
+description = "Temperature to blackbody color"
+repository = "https://github.com/hatoo/blackbody"
+readme = "README.md"
+keywords = ["color", "blackbody", "graphics"]
+categories = ["graphics", "images"]
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
